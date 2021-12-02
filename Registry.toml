@@ -1,0 +1,6 @@
+name = "LegendJuliaRegistry"
+uuid = "b7237ffd-a9c3-49b0-83fb-09b4b744a062"
+repo = "https://github.com/legend-exp/LegendJuliaRegistry.git"
+description = "Julia packages specific to the LEGEND experiment"
+
+[packages]
