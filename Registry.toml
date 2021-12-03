@@ -5,6 +5,7 @@ description = "Julia packages specific to the LEGEND experiment"
 
 [packages]
 33d6da08-6349-5f7c-b5a4-6ff4d8795aaf = { name = "LegendTestData", path = "L/LegendTestData" }
+59dd4b32-a3c2-596d-b22d-5bb8b5f60033 = { name = "LegendUpROOTIO", path = "L/LegendUpROOTIO" }
 99e09c13-5545-5ee2-bfa2-77f358fb75d8 = { name = "LegendDataTypes", path = "L/LegendDataTypes" }
 c397c909-374d-579b-8af3-fa3aa4f02e89 = { name = "LegendTextIO", path = "L/LegendTextIO" }
 c9265ca6-b027-5446-b1a4-febfa8dd10b0 = { name = "LegendHDF5IO", path = "L/LegendHDF5IO" }
