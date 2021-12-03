@@ -4,3 +4,4 @@ repo = "https://github.com/legend-exp/LegendJuliaRegistry.git"
 description = "Julia packages specific to the LEGEND experiment"
 
 [packages]
+99e09c13-5545-5ee2-bfa2-77f358fb75d8 = { name = "LegendDataTypes", path = "L/LegendDataTypes" }
