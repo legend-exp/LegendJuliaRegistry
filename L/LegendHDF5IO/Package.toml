@@ -1,0 +1,3 @@
+name = "LegendHDF5IO"
+uuid = "c9265ca6-b027-5446-b1a4-febfa8dd10b0"
+repo = "https://github.com/legend-exp/LegendHDF5IO.jl.git"
