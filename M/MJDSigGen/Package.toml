@@ -1,0 +1,3 @@
+name = "MJDSigGen"
+uuid = "0b925020-e659-485c-98dd-189633cb4be4"
+repo = "https://github.com/legend-exp/MJDSigGen.jl.git"
