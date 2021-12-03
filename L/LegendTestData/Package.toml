@@ -1,0 +1,3 @@
+name = "LegendTestData"
+uuid = "33d6da08-6349-5f7c-b5a4-6ff4d8795aaf"
+repo = "https://github.com/legend-exp/LegendTestData.jl.git"
