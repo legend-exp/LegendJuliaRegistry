@@ -2,7 +2,6 @@
 ArraysOfArrays = "0.5"
 ElasticArrays = "1"
 EncodedArrays = "0.2"
-HDF5 = "0.15"
 LegendDataTypes = "0.1"
 RadiationDetectorSignals = "0.1"
 StaticArrays = ["0.12", "1"]
@@ -12,3 +11,9 @@ Tables = ["0.2", "1"]
 TypedTables = "1.2.0-1"
 Unitful = "1"
 julia = "1.6.0-1"
+
+["0-0.1.0"]
+HDF5 = "0.15"
+
+["0.1.1-0"]
+HDF5 = "0.15-0.16"
