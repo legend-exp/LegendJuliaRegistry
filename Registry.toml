@@ -5,6 +5,7 @@ description = "Julia packages specific to the LEGEND experiment"
 
 [packages]
 0b925020-e659-485c-98dd-189633cb4be4 = { name = "MJDSigGen", path = "M/MJDSigGen" }
+18221496-77af-46cf-bab8-820da09f7f97 = { name = "LegendSpecFits", path = "L/LegendSpecFits" }
 33d6da08-6349-5f7c-b5a4-6ff4d8795aaf = { name = "LegendTestData", path = "L/LegendTestData" }
 59dd4b32-a3c2-596d-b22d-5bb8b5f60033 = { name = "LegendUpROOTIO", path = "L/LegendUpROOTIO" }
 99e09c13-5545-5ee2-bfa2-77f358fb75d8 = { name = "LegendDataTypes", path = "L/LegendDataTypes" }
