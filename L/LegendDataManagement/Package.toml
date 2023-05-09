@@ -1,0 +1,3 @@
+name = "LegendDataManagement"
+uuid = "9feedd95-f0e0-423f-a8dc-de0970eae6b3"
+repo = "git@github.com:legend-exp/LegendDataManagement.jl.git"
