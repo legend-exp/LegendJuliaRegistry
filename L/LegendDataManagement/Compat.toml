@@ -5,3 +5,7 @@ PropDicts = "0.2"
 PropertyDicts = "0.2"
 StructArrays = "0.4-0.6"
 julia = "1.6.0-1"
+
+["0.2.1-0"]
+Requires = "1"
+Unitful = "1"

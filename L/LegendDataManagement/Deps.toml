@@ -5,3 +5,7 @@ JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
 PropDicts = "4dc08600-4268-439e-8673-d706fafbb426"
 PropertyDicts = "f8a19df8-e894-5f55-a973-672c1158cbca"
 StructArrays = "09ab397b-f2b6-538f-b94a-2f83cf4a842a"
+
+["0.2.1-0"]
+Requires = "ae029012-a4dd-5104-9daa-d747884805df"
+Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
