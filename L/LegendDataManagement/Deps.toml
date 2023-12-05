@@ -7,9 +7,19 @@ PropertyDicts = "f8a19df8-e894-5f55-a973-672c1158cbca"
 StructArrays = "09ab397b-f2b6-538f-b94a-2f83cf4a842a"
 
 ["0.2.1-0"]
-Requires = "ae029012-a4dd-5104-9daa-d747884805df"
 Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
+
+["0.2.1-0.2.4"]
+Requires = "ae029012-a4dd-5104-9daa-d747884805df"
 
 ["0.2.4-0"]
 Distributed = "8ba89e20-285c-5b6f-9357-94700520ee1b"
 Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
+
+["0.2.5-0"]
+IntervalSets = "8197267c-284f-5f27-9208-e0e47529a953"
+LRUCache = "8ac3fa9e-de4c-5943-b1dc-09c6b5f20637"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+ProgressMeter = "92933f4c-e287-5a05-a399-4b506db050ca"
+PropertyFunctions = "09e99361-2bb8-48a2-a80f-de58f0739eb4"
+StaticStrings = "4db0a0c5-418a-4e1d-8806-cb305fe13294"

@@ -3,14 +3,31 @@ Glob = "1"
 JSON = ["0.21", "1"]
 PropertyDicts = "0.2"
 StructArrays = "0.4-0.6"
-julia = "1.6.0-1"
 
 ["0-0.2.3"]
 PropDicts = "0.2"
 
+["0-0.2.4"]
+julia = "1.6.0-1"
+
 ["0.2.1-0"]
-Requires = "1"
 Unitful = "1"
 
-["0.2.4-0"]
+["0.2.1-0.2.4"]
+Requires = "1"
+
+["0.2.4"]
 PropDicts = "0.2.2-0.2"
+
+["0.2.5-0"]
+Dates = "1"
+Distributed = "1"
+IntervalSets = "0.6-0.7"
+LRUCache = "1.5.0-1"
+Pkg = "1"
+Printf = "1"
+ProgressMeter = "1"
+PropDicts = "0.2.3-0.2"
+PropertyFunctions = "0.2"
+StaticStrings = "0.2"
+julia = "1.9.0-1"
