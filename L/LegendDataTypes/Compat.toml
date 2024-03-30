@@ -21,7 +21,7 @@ ArraysOfArrays = "0.5"
 ["0-0.1.3"]
 StatsBase = "0.32-0.33"
 
-["0.1.1-0"]
+["0.1.1-0.1.5"]
 EncodedArrays = "0.2-0.3"
 
 ["0.1.2-0"]
@@ -37,3 +37,7 @@ StatsBase = "0.32-0.34"
 
 ["0.1.5-0"]
 Printf = "1"
+
+["0.1.6-0"]
+EncodedArrays = "0.4"
+RadiationDetectorSignals = "0.3"

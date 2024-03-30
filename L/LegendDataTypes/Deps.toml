@@ -21,3 +21,6 @@ IntervalSets = "8197267c-284f-5f27-9208-e0e47529a953"
 Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 UnitfulAtomic = "a7773ee8-282e-5fa2-be4e-bd808c38a91a"
 UnitfulParsableString = "06c00241-927a-4d5b-bb5e-6b5a2ada3567"
+
+["0.1.6-0"]
+RadiationDetectorSignals = "bf2c0563-65cf-5db2-a620-ceb7de82658c"
