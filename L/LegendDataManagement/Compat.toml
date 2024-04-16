@@ -27,10 +27,26 @@ LRUCache = "1.5.0-1"
 Pkg = "1"
 Printf = "1"
 ProgressMeter = "1"
-PropDicts = "0.2.3-0.2"
-PropertyFunctions = "0.2"
 StaticStrings = "0.2"
 julia = "1.9.0-1"
 
+["0.2.5-0.2.7"]
+PropDicts = "0.2.3-0.2"
+PropertyFunctions = "0.2"
+
 ["0.2.7-0"]
 Tables = ["0.2", "1"]
+
+["0.2.8-0"]
+ClusterManagers = "0.4.5-0.4"
+Format = "1"
+LinearAlgebra = "1"
+MIMEs = "0.1"
+Markdown = "1"
+Measurements = "2"
+PropDicts = "0.2.4-0.2"
+PropertyFunctions = "0.2.1-0.2"
+RecipesBase = "1"
+ThreadPinning = "0.7"
+TypedTables = "1.4.0-1"
+UUIDs = "1"
