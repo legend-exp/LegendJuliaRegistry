@@ -38,7 +38,6 @@ PropertyFunctions = "0.2"
 Tables = ["0.2", "1"]
 
 ["0.2.8-0"]
-ClusterManagers = "0.4.5-0.4"
 Format = "1"
 LinearAlgebra = "1"
 MIMEs = "0.1"
@@ -50,3 +49,6 @@ RecipesBase = "1"
 ThreadPinning = "0.7"
 TypedTables = "1.4.0-1"
 UUIDs = "1"
+
+["0.2.8-0.2"]
+ClusterManagers = "0.4.5-0.4"
