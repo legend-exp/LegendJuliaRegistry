@@ -1,8 +1,13 @@
-["0.2.1-0.2.3"]
+["0.2.1 - 0.2.3"]
 SolidStateDetectors = "0.8"
 
-["0.2.4-0"]
+["0.2.4 - 0.3.0"]
 SolidStateDetectors = "0.8-0.9"
 
-["0.2.8-0"]
+["0.2.8 - 0"]
 RecipesBase = "1"
+
+["0.3.1 - 0"]
+LegendHDF5IO = "0.1.14 - 0.1"
+Plots = "1"
+SolidStateDetectors = "0.8 - 0.9"

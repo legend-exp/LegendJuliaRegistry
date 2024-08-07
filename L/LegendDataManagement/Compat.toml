@@ -2,53 +2,70 @@
 Glob = "1"
 JSON = ["0.21", "1"]
 PropertyDicts = "0.2"
-StructArrays = "0.4-0.6"
 
-["0-0.2.3"]
+["0 - 0.2.3"]
 PropDicts = "0.2"
 
-["0-0.2.4"]
+["0 - 0.2.4"]
 julia = "1.6.0-1"
 
-["0.2.1-0"]
+["0 - 0.3.0"]
+StructArrays = "0.4-0.6"
+
+["0.2.1 - 0"]
 Unitful = "1"
 
-["0.2.1-0.2.4"]
+["0.2.1 - 0.2.4"]
 Requires = "1"
 
 ["0.2.4"]
 PropDicts = "0.2.2-0.2"
 
-["0.2.5-0"]
+["0.2.5 - 0"]
 Dates = "1"
 Distributed = "1"
-IntervalSets = "0.6-0.7"
-LRUCache = "1.5.0-1"
 Pkg = "1"
 Printf = "1"
 ProgressMeter = "1"
 StaticStrings = "0.2"
-julia = "1.9.0-1"
 
-["0.2.5-0.2.7"]
+["0.2.5 - 0.2.7"]
 PropDicts = "0.2.3-0.2"
 PropertyFunctions = "0.2"
 
-["0.2.7-0"]
+["0.2.5 - 0.3.0"]
+IntervalSets = "0.6-0.7"
+LRUCache = "1.5.0-1"
+julia = "1.9.0-1"
+
+["0.2.7 - 0"]
 Tables = ["0.2", "1"]
 
-["0.2.8-0"]
+["0.2.8 - 0"]
 Format = "1"
 LinearAlgebra = "1"
 MIMEs = "0.1"
 Markdown = "1"
 Measurements = "2"
-PropDicts = "0.2.4-0.2"
-PropertyFunctions = "0.2.1-0.2"
 RecipesBase = "1"
 ThreadPinning = "0.7"
-TypedTables = "1.4.0-1"
 UUIDs = "1"
 
-["0.2.8-0.2"]
+["0.2.8 - 0.2"]
 ClusterManagers = "0.4.5-0.4"
+
+["0.2.8 - 0.3.0"]
+PropDicts = "0.2.4-0.2"
+PropertyFunctions = "0.2.1-0.2"
+TypedTables = "1.4.0-1"
+
+["0.3.1 - 0"]
+IntervalSets = "0.6 - 0.7"
+LRUCache = "1.5.0 - 1"
+PropDicts = "0.2.4 - 0.2"
+PropertyFunctions = "0.2.1 - 0.2"
+Requires = ["0.5", "1"]
+Statistics = "1"
+StructArrays = "0.4 - 0.6"
+TypedTables = "1.4.0 - 1"
+julia = "1.9.0 - 1"
