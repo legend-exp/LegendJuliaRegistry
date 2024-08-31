@@ -48,7 +48,6 @@ MIMEs = "0.1"
 Markdown = "1"
 Measurements = "2"
 RecipesBase = "1"
-ThreadPinning = "0.7"
 UUIDs = "1"
 
 ["0.2.8 - 0.2"]
@@ -59,6 +58,12 @@ PropDicts = "0.2.4-0.2"
 PropertyFunctions = "0.2.1-0.2"
 TypedTables = "1.4.0-1"
 
+["0.2.8 - 0.3.1"]
+ThreadPinning = "0.7"
+
+["0.3.1"]
+julia = "1.9.0 - 1"
+
 ["0.3.1 - 0"]
 IntervalSets = "0.6 - 0.7"
 LRUCache = "1.5.0 - 1"
@@ -68,4 +73,6 @@ Requires = ["0.5", "1"]
 Statistics = "1"
 StructArrays = "0.4 - 0.6"
 TypedTables = "1.4.0 - 1"
-julia = "1.9.0 - 1"
+
+["0.3.2 - 0"]
+julia = "1.10.0 - 1"

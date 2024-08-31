@@ -34,12 +34,14 @@ MIMEs = "6c6e2e6c-3030-632d-7369-2d6c69616d65"
 Markdown = "d6f4376e-aef5-505a-96c1-9c027394607a"
 Measurements = "eff96d63-e80a-5855-80a2-b1b0885c5ab7"
 RecipesBase = "3cdcf5f2-1ef4-517c-9805-6587b60abb01"
-ThreadPinning = "811555cd-349b-4f26-b7bc-1f208b848042"
 TypedTables = "9d95f2ec-7b3d-5a63-8d20-e2491e220bb9"
 UUIDs = "cf7118a7-6976-5b1a-9a39-7adc72f591a4"
 
 ["0.2.8 - 0.2"]
 ClusterManagers = "34f1f09b-3a8b-5176-ab39-66d58a4d544e"
+
+["0.2.8 - 0.3.1"]
+ThreadPinning = "811555cd-349b-4f26-b7bc-1f208b848042"
 
 ["0.3.1 - 0"]
 Requires = "ae029012-a4dd-5104-9daa-d747884805df"
