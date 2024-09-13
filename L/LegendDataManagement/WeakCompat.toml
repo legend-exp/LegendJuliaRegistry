@@ -10,4 +10,9 @@ RecipesBase = "1"
 ["0.3.1 - 0"]
 LegendHDF5IO = "0.1.14 - 0.1"
 Plots = "1"
+
+["0.3.1 - 0.3.2"]
 SolidStateDetectors = "0.8 - 0.9"
+
+["0.3.3 - 0"]
+SolidStateDetectors = "0.8 - 0.10"
