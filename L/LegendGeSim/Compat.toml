@@ -1,26 +1,20 @@
 [0]
-ArgCheck = "1-2"
 DSP = "0.7"
-Distributions = "0.23-0.25"
 ElasticArrays = "1"
 JSON = "0.21"
 LegendDataTypes = "0.1"
 LegendHDF5IO = "0.1"
 LegendTextIO = "0.1"
-MJDSigGen = "0.1"
 Parameters = "0.12"
 PropDicts = "0.2"
 RadiationSpectra = "0.5"
-Random123 = "1.2.0-1"
 RecipesBase = "1"
 Requires = ["0.5", "1"]
 StaticArrays = ["0.12", "1"]
-StructArrays = "0.5-0.6"
 Tables = "1"
-TypedTables = "1.2.0-1"
 Unitful = "1"
 
-["0-0.1.0"]
+["0 - 0.1.0"]
 CurveFit = "0.3"
 EncodedArrays = "0.2"
 FillArrays = "0.11-0.12"
@@ -31,29 +25,61 @@ RadiationDetectorSignals = "0.1"
 SolidStateDetectors = "0.7"
 julia = "1.6.0-1"
 
-["0-0.1.1"]
+["0 - 0.1.1"]
 ArraysOfArrays = "0.5"
 Clustering = "0.14"
 LsqFit = "0.12"
 RadiationDetectorDSP = "0.1"
 StatsBase = "0.32-0.33"
 
+["0 - 0.1.2"]
+ArgCheck = "1-2"
+Distributions = "0.23-0.25"
+MJDSigGen = "0.1"
+Random123 = "1.2.0-1"
+StructArrays = "0.5-0.6"
+TypedTables = "1.2.0-1"
+
 ["0.1.1"]
 FillArrays = "0.11-0.13"
 
-["0.1.1-0"]
+["0.1.1 - 0"]
+RadiationDetectorSignals = "0.3"
+
+["0.1.1 - 0.1.2"]
 CurveFit = ["0.3", "0.5"]
 EncodedArrays = "0.2-0.3"
 HDF5 = "0.15-0.16"
 IntervalSets = "0.5-0.7"
 Polynomials = "2-3"
-RadiationDetectorSignals = "0.3"
 SolidStateDetectors = "0.8"
 julia = "1.7.0-1"
 
-["0.1.2-0"]
+["0.1.2"]
 ArraysOfArrays = "0.5-0.6"
 LegendDataManagement = "0.2.1-0.2"
 LsqFit = "0.12-0.13"
 RadiationDetectorDSP = "0.1-0.2"
 StatsBase = "0.32-0.34"
+
+["0.1.3 - 0"]
+ArgCheck = "1 - 2"
+ArraysOfArrays = "0.5 - 0.6"
+CurveFit = ["0.3", "0.5 - 0.6"]
+DelimitedFiles = "1"
+Distributions = "0.23 - 0.25"
+HDF5 = "0.15 - 0.17"
+IntervalSets = "0.5 - 0.7"
+LegendDataManagement = "0.2.1 - 0.3"
+LsqFit = "0.13 - 0.15"
+MJDSigGen = "0.2"
+Polynomials = "2 - 4"
+RadiationDetectorDSP = "0.2.1 - 0.2"
+Random123 = "1.2.0 - 1"
+SignalAnalysis = "0.4 - 0.9"
+SolidStateDetectors = "0.9.4 - 0.10"
+Statistics = "1"
+StatsBase = "0.32 - 0.34"
+StructArrays = "0.5 - 0.6"
+TypedTables = "1.2.0 - 1"
+julia = "1.10.0 - 1"

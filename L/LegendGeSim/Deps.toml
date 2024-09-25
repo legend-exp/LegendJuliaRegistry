@@ -6,7 +6,6 @@ DSP = "717857b8-e6f2-59f4-9121-6e50c889abd2"
 DelimitedFiles = "8bb1440f-4735-579b-a4ab-409b98df4dab"
 Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
 ElasticArrays = "fdbdab4c-e67f-52f5-8c3f-e7b388dad3d4"
-EncodedArrays = "97725368-735e-11e9-0dd7-6bf34c3b13a8"
 HDF5 = "f67ccb44-e63f-5c2f-98bd-6dc0ccc4ba2f"
 IntervalSets = "8197267c-284f-5f27-9208-e0e47529a953"
 JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
@@ -35,9 +34,15 @@ Tables = "bd369af6-aec1-5ad0-b16a-f7cc5008161c"
 TypedTables = "9d95f2ec-7b3d-5a63-8d20-e2491e220bb9"
 Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
 
-["0-0.1.1"]
+["0 - 0.1.1"]
 Clustering = "aaaa29a8-35af-508c-8bc3-b662a17a0fe5"
 FillArrays = "1a297f60-69ca-5386-bcde-b61e274b549b"
 
-["0.1.2-0"]
+["0 - 0.1.2"]
+EncodedArrays = "97725368-735e-11e9-0dd7-6bf34c3b13a8"
+
+["0.1.2 - 0"]
 LegendDataManagement = "9feedd95-f0e0-423f-a8dc-de0970eae6b3"
+
+["0.1.3 - 0"]
+SignalAnalysis = "df1fea92-c066-49dd-8b36-eace3378ea47"
