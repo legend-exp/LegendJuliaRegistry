@@ -44,5 +44,7 @@ ClusterManagers = "34f1f09b-3a8b-5176-ab39-66d58a4d544e"
 ThreadPinning = "811555cd-349b-4f26-b7bc-1f208b848042"
 
 ["0.3.1 - 0"]
-Requires = "ae029012-a4dd-5104-9daa-d747884805df"
 Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+
+["0.3.1 - 0.3"]
+Requires = "ae029012-a4dd-5104-9daa-d747884805df"
