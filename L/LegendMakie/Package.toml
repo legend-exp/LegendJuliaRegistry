@@ -1,0 +1,3 @@
+name = "LegendMakie"
+uuid = "ce9a434a-d062-4f11-9371-3059ddb1c48a"
+repo = "https://github.com/legend-exp/LegendMakie.jl"

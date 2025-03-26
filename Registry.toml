@@ -13,5 +13,6 @@ description = "Julia packages specific to the LEGEND experiment"
 c397c909-374d-579b-8af3-fa3aa4f02e89 = { name = "LegendTextIO", path = "L/LegendTextIO" }
 c9265ca6-b027-5446-b1a4-febfa8dd10b0 = { name = "LegendHDF5IO", path = "L/LegendHDF5IO" }
 ca666546-4c2a-41e4-9648-72713d810efe = { name = "LegendEventAnalysis", path = "L/LegendEventAnalysis" }
+ce9a434a-d062-4f11-9371-3059ddb1c48a = { name = "LegendMakie", path = "L/LegendMakie" }
 e592b54b-af3c-468f-bcc7-10a913e293a7 = { name = "LegendGeSim", path = "L/LegendGeSim" }
 e6d7a502-be5c-5049-a927-8d60e566555d = { name = "LegendDSP", path = "L/LegendDSP" }
