@@ -4,5 +4,8 @@ LegendDataManagement = "0.2"
 ["0.1.13"]
 LegendDataManagement = "0.2-0.3"
 
-["0.1.16 - 0"]
+["0.1.16"]
 Measurements = "2"
+
+["0.1.17 - 0"]
+Measurements = "2.5.0 - 2"
