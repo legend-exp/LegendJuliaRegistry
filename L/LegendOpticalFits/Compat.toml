@@ -1,0 +1,10 @@
+[0]
+CSV = "0.10.15 - 0.10"
+Distributions = "0.25.120 - 0.25"
+HDF5 = "0.17.2 - 0.17"
+LegendDataManagement = "0.5.6 - 0.5"
+LegendHDF5IO = "0.1.17 - 0.1"
+Pkg = "1.10.0 - 1"
+Random = "1.10.0 - 1"
+StatsBase = "0.34.6 - 0.34"
+julia = "1.10.0 - 1"

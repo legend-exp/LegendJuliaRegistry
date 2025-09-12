@@ -1,0 +1,3 @@
+name = "LegendOpticalFits"
+uuid = "bbb9fcaf-2b60-4c6b-9c8a-4fdd17999abf"
+repo = "git@github.com:legend-exp/LegendOpticalFits.jl.git"
