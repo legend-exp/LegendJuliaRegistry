@@ -1,10 +1,12 @@
 [0]
 Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
 Glob = "c27321d9-0574-5035-807b-f59d2c89b15c"
-JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
 PropDicts = "4dc08600-4268-439e-8673-d706fafbb426"
 PropertyDicts = "f8a19df8-e894-5f55-a973-672c1158cbca"
 StructArrays = "09ab397b-f2b6-538f-b94a-2f83cf4a842a"
+
+["0 - 0.5"]
+JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
 
 ["0.2.1 - 0"]
 Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
@@ -52,3 +54,8 @@ Requires = "ae029012-a4dd-5104-9daa-d747884805df"
 ["0.5 - 0"]
 OhMyThreads = "67456a42-1dca-4109-a031-0a68de7e3ad5"
 UnitfulAtomic = "a7773ee8-282e-5fa2-be4e-bd808c38a91a"
+
+["0.6 - 0"]
+OrderedCollections = "bac558e1-5e72-5ebc-8fee-abe8a469f55d"
+ParallelProcessingTools = "8e8a01fc-6193-5ca1-a2f1-20776dae4199"
+YAML = "ddb6d928-2868-570f-bddf-ab3f9cf99eb6"
