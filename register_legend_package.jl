@@ -1,6 +1,6 @@
 #!/usr/bin/env julia
 
-const LEGEND_REGISTRY = LEGEND_REGISTRY
+const LEGEND_REGISTRY = "LegendJuliaRegistry"
 
 targetdir = get(ARGS, 1, ".")
 cd(targetdir)
@@ -8,6 +8,8 @@ cd(targetdir)
 if !isdir(".git")
     error("Current directory is not a git repository.")
 end
+
+using Pkg
 
 legend_julia_registry = only(filter(f -> f.name == LEGEND_REGISTRY, Pkg.Registry.reachable_registries()))
 legend_julia_registry_path = legend_julia_registry.path
@@ -20,10 +22,9 @@ cd(legend_julia_registry_path) do
     end
 end
 
-run(`git checkout origin main`)
+run(`git checkout main`)
 run(`git pull origin main`)
 
-using Pkg
 Pkg.activate(".")
 
 package_name = Pkg.project().name
