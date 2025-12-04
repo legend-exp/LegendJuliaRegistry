@@ -18,7 +18,7 @@ StatsBase = "0.33.7-0.34"
 TypedTables = "1.2.0-1"
 Unitful = "1.6.0-1"
 
-["0.1.1 - 0"]
+["0.1.1 - 0.1"]
 LegendDataManagement = "0.5"
 
 ["0.1.4 - 0"]
@@ -36,3 +36,6 @@ Makie = "0.22 - 0.23"
 
 ["0.1.7 - 0"]
 Makie = "0.24.4 - 0.24"
+
+["0.2 - 0"]
+LegendDataManagement = "0.6"
