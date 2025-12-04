@@ -1,5 +1,7 @@
 #!/usr/bin/env julia
 
+const LEGEND_REGISTRY = LEGEND_REGISTRY
+
 targetdir = get(ARGS, 1, ".")
 cd(targetdir)
 
@@ -7,6 +9,18 @@ if !isdir(".git")
     error("Current directory is not a git repository.")
 end
 
+legend_julia_registry = only(filter(f -> f.name == LEGEND_REGISTRY, Pkg.Registry.reachable_registries()))
+legend_julia_registry_path = legend_julia_registry.path
+
+# Ensure that the LegendJuliaRegistry git remote uses SSH
+cd(legend_julia_registry_path) do
+    origin_url = readchomp(`git remote get-url origin`)
+    if !startswith(origin_url, "git@")
+        error("$LEGEND_REGISTRY remote 'origin' must use SSH (e.g. git@github.com:legend-exp/LegendJuliaRegistry.git), but is currently '$origin_url'. Please update the remote URL.")
+    end
+end
+
+run(`git checkout origin main`)
 run(`git pull origin main`)
 
 using Pkg
@@ -20,7 +34,7 @@ if !startswith(Pkg.project().name, "Legend")
     error("This doesn't look like a LEGEND Julia package.")
 end
 
-@info "Register package $package_name in LegendJuliaRegistry"
+@info "Register package $package_name in $LEGEND_REGISTRY"
 
 if length(ARGS) > 1
     new_version = ARGS[2]
@@ -81,7 +95,7 @@ Pkg.resolve()
 #end
 
 Pkg.activate(".")
-using LocalRegistry; register(registry = "LegendJuliaRegistry")
+using LocalRegistry; register(registry = LEGEND_REGISTRY)
 run(`git tag -a v$package_version -m v$package_version`)
 run(`git push origin v$package_version`)
 
