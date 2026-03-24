@@ -1,41 +1,45 @@
 #!/usr/bin/env julia
 
-const LEGEND_REGISTRY = "LegendJuliaRegistry"
+using Pkg
+Pkg.activate(temp=true);
+Pkg.add("ArgParse");
+Pkg.add("Git");
+using ArgParse
 
-targetdir = "."
-branch = "main"
+function parse_commandline()
+    s = ArgParseSettings(description="Register a LEGEND Julia package.")
 
-i = 1
-while i <= length(ARGS)
-    arg = ARGS[i]
-    if arg == "--branch" || arg == "-b"
-        if i == length(ARGS)
-            error("Missing value for $arg")
-        end
-        branch = ARGS[i + 1]
-        i += 2
-        continue
-    elseif startswith(arg, "-")
-        error("Unknown option: $arg")
-    else
-        targetdir = arg
-        i += 1
-        continue
+    @add_arg_table! s begin
+        "--branch", "-b"
+            help = "Git branch to operate on"
+            arg_type = String
+            default = "main"
+        "--version", "-v"
+            help = "New version to set for the package (format: MAJOR.MINOR.PATCH). If not provided, registers the current version."
+            arg_type = String
+        "targetdir"
+            help = "Target directory containing the Julia package, if omitted, the current directory is used"
+            required = false
+            default = "."
     end
+
+    return parse_args(s)
 end
 
-@info "Using registry" repository=LEGEND_REGISTRY
-@info "Using CLI options" targetdir=targetdir branch=branch
+parsed_args = parse_commandline()
+targetdir = isabspath(parsed_args["targetdir"]) ? parsed_args["targetdir"] : abspath(joinpath(pwd(), parsed_args["targetdir"]))
+branch = parsed_args["branch"]
+new_version = parsed_args["version"]
+
+const LEGEND_REGISTRY = "LegendJuliaRegistry"
+
+@info "Using CLI options" repository=LEGEND_REGISTRY targetdir=targetdir branch=branch version=new_version
 
 cd(targetdir)
-
-@info "Using package repository" repository=basename(pwd()) targetdir=pwd() branch=branch
 
 if !isdir(".git")
     error("Current directory is not a git repository.")
 end
-
-using Pkg
 
 legend_julia_registry = only(filter(f -> f.name == LEGEND_REGISTRY, Pkg.Registry.reachable_registries()))
 legend_julia_registry_path = legend_julia_registry.path
@@ -48,10 +52,15 @@ cd(legend_julia_registry_path) do
     end
 end
 
-run(`git checkout origin $branch`)
-run(`git pull origin $branch`)
+using Git
+
+run(`$(Git.git()) fetch origin`)
+run(`$(Git.git()) checkout $branch`)
+run(`$(Git.git()) pull origin $branch`)
+
+# run(`git checkout origin $branch`)
+# run(`git pull origin $branch`)
 @info "Updated package repository from remote" repository=basename(pwd()) targetdir=pwd() branch=branch
-error("Stopping here for test")
 
 Pkg.activate(".")
 
@@ -65,9 +74,7 @@ end
 
 @info "Register package $package_name in $LEGEND_REGISTRY"
 
-if length(ARGS) > 1
-    new_version = ARGS[2]
-
+if !isnothing(new_version)
     if !occursin(r"^\d+\.\d+\.\d+$", new_version)
         error("Version format not correct, should be MAJOR.MINOR.PATCH where each is an integer")
     end
