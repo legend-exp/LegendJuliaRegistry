@@ -3,7 +3,6 @@
 using Pkg
 Pkg.activate(temp=true);
 Pkg.add("ArgParse");
-Pkg.add("Git");
 using ArgParse
 
 function parse_commandline()
@@ -52,11 +51,9 @@ cd(legend_julia_registry_path) do
     end
 end
 
-using Git
-
-run(`$(Git.git()) fetch origin`)
-run(`$(Git.git()) checkout $branch`)
-run(`$(Git.git()) pull origin $branch`)
+run(`git fetch origin`)
+run(`git checkout $branch`)
+run(`git pull origin $branch`)
 
 # run(`git checkout origin $branch`)
 # run(`git pull origin $branch`)
@@ -104,7 +101,7 @@ if !isnothing(new_version)
 
     run(`git add Project.toml`)
     run(`git commit -m "Increase package version to $new_version"`)
-    run(`git push origin main`)
+    run(`git push origin $branch`)
 else
     @info "Using package version $package_version"
 end
