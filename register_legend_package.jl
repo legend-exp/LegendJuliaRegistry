@@ -2,8 +2,34 @@
 
 const LEGEND_REGISTRY = "LegendJuliaRegistry"
 
-targetdir = get(ARGS, 1, ".")
+targetdir = "."
+branch = "main"
+
+i = 1
+while i <= length(ARGS)
+    arg = ARGS[i]
+    if arg == "--branch" || arg == "-b"
+        if i == length(ARGS)
+            error("Missing value for $arg")
+        end
+        branch = ARGS[i + 1]
+        i += 2
+        continue
+    elseif startswith(arg, "-")
+        error("Unknown option: $arg")
+    else
+        targetdir = arg
+        i += 1
+        continue
+    end
+end
+
+@info "Using registry" repository=LEGEND_REGISTRY
+@info "Using CLI options" targetdir=targetdir branch=branch
+
 cd(targetdir)
+
+@info "Using package repository" repository=basename(pwd()) targetdir=pwd() branch=branch
 
 if !isdir(".git")
     error("Current directory is not a git repository.")
@@ -22,8 +48,10 @@ cd(legend_julia_registry_path) do
     end
 end
 
-run(`git checkout main`)
-run(`git pull origin main`)
+run(`git checkout origin $branch`)
+run(`git pull origin $branch`)
+@info "Updated package repository from remote" repository=basename(pwd()) targetdir=pwd() branch=branch
+error("Stopping here for test")
 
 Pkg.activate(".")
 
