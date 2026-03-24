@@ -6,7 +6,6 @@ KernelDensity = "0.6"
 LaTeXStrings = "1.2.0-1"
 MathTeXEngine = "0.6.1-0.6"
 Measurements = "2.5.0-2"
-PropDicts = "0.2.4-0.2"
 RadiationDetectorSignals = "0.3.8-0.3"
 StatsBase = "0.33.7-0.34"
 TypedTables = "1.2.0-1"
@@ -17,6 +16,9 @@ LegendDataManagement = "0.4"
 
 ["0-0.1.3"]
 Makie = "0.22"
+
+["0-0.2.0"]
+PropDicts = "0.2.4-0.2"
 
 ["0.1.1-0.1"]
 LegendDataManagement = "0.5"
@@ -33,3 +35,6 @@ LegendDataTypes = "0.1"
 
 ["0.2-0"]
 LegendDataManagement = "0.6"
+
+["0.2.1-0"]
+PropDicts = "0.3.1-0.3"
