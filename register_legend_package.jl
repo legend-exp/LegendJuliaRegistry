@@ -1,15 +1,44 @@
 #!/usr/bin/env julia
 
+using Pkg
+Pkg.activate(temp=true);
+Pkg.add("ArgParse");
+using ArgParse
+
+function parse_commandline()
+    s = ArgParseSettings(description="Register a LEGEND Julia package.")
+
+    @add_arg_table! s begin
+        "--branch", "-b"
+            help = "Git branch to operate on"
+            arg_type = String
+            default = "main"
+        "--version", "-v"
+            help = "New version to set for the package (format: MAJOR.MINOR.PATCH). If not provided, registers the current version."
+            arg_type = String
+        "targetdir"
+            help = "Target directory containing the Julia package, if omitted, the current directory is used"
+            required = false
+            default = "."
+    end
+
+    return parse_args(s)
+end
+
+parsed_args = parse_commandline()
+targetdir = isabspath(parsed_args["targetdir"]) ? parsed_args["targetdir"] : abspath(joinpath(pwd(), parsed_args["targetdir"]))
+branch = parsed_args["branch"]
+new_version = parsed_args["version"]
+
 const LEGEND_REGISTRY = "LegendJuliaRegistry"
 
-targetdir = get(ARGS, 1, ".")
+@info "Using CLI options" repository=LEGEND_REGISTRY targetdir=targetdir branch=branch version=new_version
+
 cd(targetdir)
 
 if !isdir(".git")
     error("Current directory is not a git repository.")
 end
-
-using Pkg
 
 legend_julia_registry = only(filter(f -> f.name == LEGEND_REGISTRY, Pkg.Registry.reachable_registries()))
 legend_julia_registry_path = legend_julia_registry.path
@@ -22,8 +51,13 @@ cd(legend_julia_registry_path) do
     end
 end
 
-run(`git checkout main`)
-run(`git pull origin main`)
+run(`git fetch origin`)
+run(`git checkout $branch`)
+run(`git pull origin $branch`)
+
+# run(`git checkout origin $branch`)
+# run(`git pull origin $branch`)
+@info "Updated package repository from remote" repository=basename(pwd()) targetdir=pwd() branch=branch
 
 Pkg.activate(".")
 
@@ -37,9 +71,7 @@ end
 
 @info "Register package $package_name in $LEGEND_REGISTRY"
 
-if length(ARGS) > 1
-    new_version = ARGS[2]
-
+if !isnothing(new_version)
     if !occursin(r"^\d+\.\d+\.\d+$", new_version)
         error("Version format not correct, should be MAJOR.MINOR.PATCH where each is an integer")
     end
@@ -69,7 +101,7 @@ if length(ARGS) > 1
 
     run(`git add Project.toml`)
     run(`git commit -m "Increase package version to $new_version"`)
-    run(`git push origin main`)
+    run(`git push origin $branch`)
 else
     @info "Using package version $package_version"
 end
