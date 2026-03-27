@@ -65,7 +65,7 @@ package_name = Pkg.project().name
 package_version = Pkg.project().version
 @assert !isnothing(package_name) && !isnothing(package_version)
 
-if !startswith(Pkg.project().name, "Legend") || !startswith(Pkg.project().name, "Julean")
+if !startswith(Pkg.project().name, "Legend") && !startswith(Pkg.project().name, "Julean")
     error("This doesn't look like a LEGEND Julia package.")
 end
 
