@@ -30,8 +30,10 @@ Makie = "0.22-0.23"
 Makie = "0.24.4-0.24"
 
 ["0.1.9-0.1"]
-ArraysOfArrays = "0.6"
 LegendDataTypes = "0.1"
+
+["0.1.9-0.1.11"]
+ArraysOfArrays = "0.6"
 
 ["0.2-0"]
 LegendDataManagement = "0.6"
