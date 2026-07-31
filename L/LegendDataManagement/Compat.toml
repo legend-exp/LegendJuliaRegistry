@@ -83,7 +83,6 @@ Markdown = ["0.0.0", "1"]
 Measurements = "2.2.1-2"
 Printf = ["0.0.0", "1"]
 PropertyDicts = "0.2.1-0.2"
-PropertyFunctions = "0.2.2-0.2"
 Statistics = ["0.0.0", "1"]
 Tables = "1.1.0-1"
 UUIDs = ["0.0.0", "1"]
@@ -94,6 +93,9 @@ JSON = ["0.21.2-0.21", "1"]
 
 ["0.4-0.5.5"]
 ProgressMeter = "1.5.0-1"
+
+["0.4-0.6.8"]
+PropertyFunctions = "0.2.2-0.2"
 
 ["0.5-0"]
 MIMEs = ["0.1", "1"]
@@ -120,3 +122,6 @@ JSON = "1"
 
 ["0.6.4-0"]
 PropDicts = "0.3.1-0.3"
+
+["0.6.9-0"]
+PropertyFunctions = "0.2.5-0.2"
