@@ -114,6 +114,9 @@ OrderedCollections = "1.1.0-1"
 ParallelProcessingTools = "0.4.4-0.4"
 YAML = "0.4.5-0.4"
 
+["0.6.10-0"]
+PropertyFunctions = "0.3"
+
 ["0.6.3"]
 PropDicts = "0.3"
 
@@ -123,5 +126,5 @@ JSON = "1"
 ["0.6.4-0"]
 PropDicts = "0.3.1-0.3"
 
-["0.6.9-0"]
+["0.6.9"]
 PropertyFunctions = "0.2.5-0.2"
