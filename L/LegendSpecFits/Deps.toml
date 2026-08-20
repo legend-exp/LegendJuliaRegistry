@@ -61,3 +61,8 @@ OptimizationOptimJL = "36348300-93cb-4f02-beb5-3c3902f8871e"
 ["0.4-0"]
 OrderedCollections = "bac558e1-5e72-5ebc-8fee-abe8a469f55d"
 SavitzkyGolay = "c4bf5708-b6a6-4fbe-bcd0-6850ed671584"
+
+["0.4.7-0"]
+FunctionChains = "8e6b2b91-af83-483e-ba35-d00930e4cf9b"
+MeasureBase = "fa1605e6-acd5-459c-a1e6-7e635759db14"
+OptimizationLBFGSB = "22f7324a-a79d-40f2-bebe-3af60c77bd15"
