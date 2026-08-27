@@ -86,7 +86,6 @@ RadiationSpectra = "0.5.11-0.5"
 StructArrays = "0.4-0.7"
 
 ["0.4-0"]
-ArraysOfArrays = "0.5-0.6"
 ChangesOfVariables = "0.1.3-0.1"
 Distributions = "0.25.87-0.25"
 FillArrays = "1.4.1-1"
@@ -123,6 +122,9 @@ Optim = "1.7.5-1"
 LogExpFunctions = "0.3.16-0.3"
 Optimization = "3.26.0-4"
 
+["0.4-0.4.7"]
+ArraysOfArrays = "0.5-0.6"
+
 ["0.4.0"]
 StatsBase = "0.33.7-0.34"
 
@@ -150,3 +152,6 @@ MeasureBase = "0.14"
 Optimization = "5"
 OptimizationLBFGSB = "1"
 Roots = "2-3"
+
+["0.4.8-0"]
+ArraysOfArrays = ["0.5-0.6", "1"]
