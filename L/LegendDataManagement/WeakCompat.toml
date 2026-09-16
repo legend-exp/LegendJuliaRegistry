@@ -17,17 +17,22 @@ Plots = "1"
 SolidStateDetectors = "0.8-0.10"
 
 ["0.4-0"]
-LegendDataTypes = "0.1.13-0.1"
 Plots = ["0.0.0", "1"]
 
 ["0.4-0.5.3"]
 SolidStateDetectors = "0.10.2-0.10"
+
+["0.4-0.6.12"]
+LegendDataTypes = "0.1.13-0.1"
 
 ["0.5.4-0.6.0"]
 SolidStateDetectors = "0.10.16-0.10"
 
 ["0.6.1-0.6.2"]
 SolidStateDetectors = "0.10.25-0.10"
+
+["0.6.13-0"]
+LegendDataTypes = "0.1.17-0.1"
 
 ["0.6.3-0.6.6"]
 SolidStateDetectors = "0.10.25-0.11"

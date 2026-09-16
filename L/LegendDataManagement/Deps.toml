@@ -62,5 +62,8 @@ OrderedCollections = "bac558e1-5e72-5ebc-8fee-abe8a469f55d"
 ParallelProcessingTools = "8e8a01fc-6193-5ca1-a2f1-20776dae4199"
 YAML = "ddb6d928-2868-570f-bddf-ab3f9cf99eb6"
 
+["0.6.13-0"]
+PrecompileTools = "aea7be01-6a6a-4083-8856-8a6e6704d82a"
+
 ["0.6.3-0"]
 JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
