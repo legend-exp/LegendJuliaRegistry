@@ -60,3 +60,8 @@ PropertyFunctions = "0.3"
 
 ["0.3.3-0"]
 ArraysOfArrays = ["0.6.5-0.6", "1"]
+
+["0.3.4-0"]
+Dates = "1"
+Measurements = "2"
+Statistics = "1"
