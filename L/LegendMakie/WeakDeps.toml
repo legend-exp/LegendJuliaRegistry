@@ -19,3 +19,6 @@ LegendDataTypes = "99e09c13-5545-5ee2-bfa2-77f358fb75d8"
 
 ["0.1.9-0.1.11"]
 ArraysOfArrays = "65a8f2f4-9b39-5baf-92e2-a9cc46fdf018"
+
+["0.2.2-0"]
+LegendDataTypes = "99e09c13-5545-5ee2-bfa2-77f358fb75d8"
