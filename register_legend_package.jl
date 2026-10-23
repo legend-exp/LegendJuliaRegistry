@@ -128,7 +128,10 @@ Pkg.resolve()
 #end
 
 Pkg.activate(".")
-using LocalRegistry; register(registry = LEGEND_REGISTRY)
+# The registry stores the HTTPS address, so the package installs without an SSH key.
+package_repo = replace(readchomp(`git remote get-url origin`), r"^git@github\.com:" => "https://github.com/")
+startswith(package_repo, "https://") || error("Cannot derive an HTTPS address from the git remote '$package_repo'.")
+using LocalRegistry; register(registry = LEGEND_REGISTRY, repo = package_repo)
 run(`git tag -a v$package_version -m v$package_version`)
 run(`git push origin v$package_version`)
 
