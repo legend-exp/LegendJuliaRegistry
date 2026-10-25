@@ -11,7 +11,6 @@ HDF5 = "0.17"
 IntervalSets = "0.7"
 LaTeXStrings = "1"
 LegendDSP = "0.3.7-0.3"
-LegendDataManagement = "0.6.18-0.6"
 LegendDataTypes = "0.1.17-0.1"
 LegendEventAnalysis = "0.3.4-0.3"
 LegendHDF5IO = "0.1.19-0.1"
@@ -43,3 +42,9 @@ UUIDs = "1"
 Unitful = "1"
 UnitfulAtomic = "1"
 julia = "1.12.0-1"
+
+["0-0.2.1"]
+LegendDataManagement = "0.6.18-0.6"
+
+["0.2.2-0"]
+LegendDataManagement = "0.6.19-0.6"
