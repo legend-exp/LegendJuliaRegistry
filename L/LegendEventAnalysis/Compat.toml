@@ -52,7 +52,7 @@ LegendDataManagement = "0.5"
 StructArrays = "0.6.6-0.7"
 TypedTables = "1.4.0-1"
 
-["0.3-0"]
+["0.3-0.3.4"]
 LegendDataManagement = "0.6"
 
 ["0.3.2-0"]
@@ -65,3 +65,8 @@ ArraysOfArrays = ["0.6.5-0.6", "1"]
 Dates = "1"
 Measurements = "2"
 Statistics = "1"
+
+["0.3.5-0"]
+FillArrays = "1"
+LegendDataManagement = "0.6.21-0.6"
+PrecompileTools = "1"
