@@ -10,12 +10,8 @@ Graphs = "1.9.0-1"
 HDF5 = "0.17"
 IntervalSets = "0.7"
 LaTeXStrings = "1"
-LegendDSP = "0.3.7-0.3"
 LegendDataTypes = "0.1.17-0.1"
-LegendEventAnalysis = "0.3.4-0.3"
 LegendHDF5IO = "0.1.19-0.1"
-LegendMakie = "0.2.3-0.2"
-LegendSpecFits = "0.4.12-0.4"
 Logging = "1"
 LoggingExtras = "1"
 Makie = "0.24"
@@ -46,5 +42,18 @@ julia = "1.12.0-1"
 ["0-0.2.1"]
 LegendDataManagement = "0.6.18-0.6"
 
-["0.2.2-0"]
+["0-0.2.2"]
+LegendDSP = "0.3.7-0.3"
+LegendEventAnalysis = "0.3.4-0.3"
+LegendMakie = "0.2.3-0.2"
+LegendSpecFits = "0.4.12-0.4"
+
+["0.2.2"]
 LegendDataManagement = "0.6.19-0.6"
+
+["0.2.3-0"]
+LegendDSP = "0.3.8-0.3"
+LegendDataManagement = "0.6.21-0.6"
+LegendEventAnalysis = "0.3.5-0.3"
+LegendMakie = "0.2.4-0.2"
+LegendSpecFits = "0.4.13-0.4"
