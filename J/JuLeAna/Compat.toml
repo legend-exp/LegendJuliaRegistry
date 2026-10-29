@@ -51,9 +51,14 @@ LegendSpecFits = "0.4.12-0.4"
 ["0.2.2"]
 LegendDataManagement = "0.6.19-0.6"
 
+["0.2.3"]
+LegendDataManagement = "0.6.21-0.6"
+
 ["0.2.3-0"]
 LegendDSP = "0.3.8-0.3"
-LegendDataManagement = "0.6.21-0.6"
 LegendEventAnalysis = "0.3.5-0.3"
 LegendMakie = "0.2.4-0.2"
 LegendSpecFits = "0.4.13-0.4"
+
+["0.2.4-0"]
+LegendDataManagement = "0.6.23-0.6"
