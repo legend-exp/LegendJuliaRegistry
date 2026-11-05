@@ -42,3 +42,7 @@ TypedTables = "9d95f2ec-7b3d-5a63-8d20-e2491e220bb9"
 UUIDs = "cf7118a7-6976-5b1a-9a39-7adc72f591a4"
 Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
 UnitfulAtomic = "a7773ee8-282e-5fa2-be4e-bd808c38a91a"
+
+["0.2.6-0"]
+ArraysOfArrays = "65a8f2f4-9b39-5baf-92e2-a9cc46fdf018"
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
