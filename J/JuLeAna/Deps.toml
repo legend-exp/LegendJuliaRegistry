@@ -46,3 +46,7 @@ UnitfulAtomic = "a7773ee8-282e-5fa2-be4e-bd808c38a91a"
 ["0.2.6-0"]
 ArraysOfArrays = "65a8f2f4-9b39-5baf-92e2-a9cc46fdf018"
 Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+
+["0.3-0"]
+RadiationDetectorDSP = "afd6e06f-c550-5763-af36-7391d39e46ec"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
