@@ -9,3 +9,7 @@ Measurements = "2"
 
 ["0.1.17-0"]
 Measurements = "2.5.0-2"
+
+["0.2-0"]
+PropertyFunctions = "0.3"
+TypedTables = "1"

@@ -3,3 +3,7 @@ LegendDataManagement = "9feedd95-f0e0-423f-a8dc-de0970eae6b3"
 
 ["0.1.16-0"]
 Measurements = "eff96d63-e80a-5855-80a2-b1b0885c5ab7"
+
+["0.2-0"]
+PropertyFunctions = "09e99361-2bb8-48a2-a80f-de58f0739eb4"
+TypedTables = "9d95f2ec-7b3d-5a63-8d20-e2491e220bb9"

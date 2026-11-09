@@ -1,4 +1,4 @@
-[0]
+["0-0.1"]
 ElasticArrays = "1"
 StaticArrays = ["0.12", "1"]
 Tables = ["0.2", "1"]
@@ -39,18 +39,20 @@ Requires = ["0.5", "1"]
 ["0.1.15-0"]
 julia = "1.10.0-1"
 
-["0.1.16-0"]
+["0.1.16-0.1"]
 StructArrays = "0.4-0.7"
 
 ["0.1.17-0"]
 H5Zzstd = "0.1.2-0.1"
-HDF5 = "0.16.16-0.17"
-LegendDataTypes = "0.1.6-0.1"
-RadiationDetectorSignals = "0.3.6-0.3"
 StatsBase = "0.33.17-0.34"
 Unitful = "1.9.1-1"
 
-["0.1.19-0"]
+["0.1.17-0.1"]
+HDF5 = "0.16.16-0.17"
+LegendDataTypes = "0.1.6-0.1"
+RadiationDetectorSignals = "0.3.6-0.3"
+
+["0.1.19-0.1"]
 ArraysOfArrays = ["0.5-0.6", "1"]
 EncodedArrays = "0.4-0.5"
 
@@ -71,3 +73,17 @@ StatsBase = "0.32-0.34"
 
 ["0.1.7-0.1.16"]
 HDF5 = "0.15-0.17"
+
+["0.2-0"]
+ArraysOfArrays = "1.4.1-1"
+DataAPI = "1.8.0-1"
+DiskArrays = "0.4.25-0.4"
+EncodedArrays = "0.5"
+HDF5 = "0.17"
+LegendDataTypes = "0.1.17-0.1"
+PrecompileTools = "1.2.0-1"
+RadiationDetectorSignals = "0.3.12-0.3"
+ScopedSettings = "0.2"
+StaticArrays = "1"
+StructArrays = "0.6.15-0.7"
+Tables = "1.8.0-1"
